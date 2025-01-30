@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Reports</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h1>Dashboard</h1>
+      <div class="filter">
+        <label for="filter">Filter by:</label>
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="today">Today</option>
+          <option value="week">This Week</option>
+          <option value="month">This Month</option>
+        </select>
+      </div>
+    </header>
+
+    <section class="stats">
+      <div class="stat-item">
+        <h3>Total Users</h3>
+        <p>1,234</p>
+      </div>
+      <div class="stat-item">
+        <h3>Active Users</h3>
+        <p>567</p>
+      </div>
+      <div class="stat-item">
+        <h3>New Signups</h3>
+        <p>123</p>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-item">
+        <h3>User Growth</h3>
+        <img src="https://1.bp.blogspot.com/-23x7VjKvXjU/Xb_xRf5PA3I/AAAAAAAAJyg/K0-3WdPbskQimcgDiiCg9H_a0VIHcEzdACLcBGAsYHQ/s0/pinterest-322-million-monthly-active-users-2019.png" alt="User Growth Chart" class="chart-image">
+      </div>
+      <div class="chart-item">
+        <h3>Revenue</h3>
+        <img src="https://cdn2.slidemodel.com/wp-content/uploads/21059-01-annual-report-slides-for-powerpoint-16x9-19.jpg" alt="Revenue Chart" class="chart-image">
+      </div>
+    </section>
+
+    <section class="data-table">
+        <h3>Recent User Activity</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>User</th>
+              <th>Email</th>
+              <th>Signup Date</th>
+              <th>Status</th>
+              <th>Last Login</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Michael Anderson</td>
+              <td>michael.anderson@example.com</td>
+              <td>Oct 11, 2024</td>
+              <td>Active</td>
+              <td>Oct 12, 2024, 10:45 AM</td>
+            </tr>
+            <tr>
+              <td>Sophia Turner</td>
+              <td>sophia.turner@example.com</td>
+              <td>Oct 10, 2024</td>
+              <td>Inactive</td>
+              <td>Oct 11, 2024, 9:30 AM</td>
+            </tr>
+            <tr>
+              <td>Chris Johnson</td>
+              <td>chris.johnson@example.com</td>
+              <td>Oct 9, 2024</td>
+              <td>Active</td>
+              <td>Oct 12, 2024, 8:15 AM</td>
+            </tr>
+            <tr>
+              <td>Linda Scott</td>
+              <td>linda.scott@example.com</td>
+              <td>Oct 8, 2024</td>
+              <td>Active</td>
+              <td>Oct 11, 2024, 11:00 PM</td>
+            </tr>
+            <tr>
+              <td>James Peterson</td>
+              <td>james.peterson@example.com</td>
+              <td>Oct 7, 2024</td>
+              <td>Suspended</td>
+              <td>Oct 10, 2024, 2:00 PM</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
